@@ -1,0 +1,7 @@
+#! /bin/zsh
+
+input "1008:13642:HP_USB_Slim_Keyboard" {
+        xkb_layout "latam"
+        repeat_delay 250
+        repeat_rate 50
+}

@@ -1,0 +1,15 @@
+#! /bin/zsh
+
+set $mod Mod4
+set $left Left
+set $down Down
+set $up Up
+set $right Right
+
+set $term foot
+set $menu wofi --show drun
+
+set $wallpaper ~/Images/Wallpapers/wallpaper
+set $lockscreen ~/Images/Wallpapers/lockscreen
+
+set $lock swaylock
