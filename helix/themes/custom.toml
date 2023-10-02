@@ -1,0 +1,178 @@
+# Template document for helix color schemes
+# See also: https://docs.helix-editor.com/themes.html
+#
+# NOTE: Keys default to the most specific parent value.
+#       e.g ui.cursor.primary > ui.cursor > ui
+
+
+
+# GENERAL ==============================
+
+'warning' = 'yellow'
+'error' = { fg = 'red', modifiers = ['bold'] }
+'info' = { fg = 'blue', modifiers = ['bold'] }
+'hint' = { fg = 'blue', modifiers = ['bold'] }
+'diagnostic.hint' = { underline = { color = 'blue', style='curl'} }
+'diagnostic.info'= { underline = { color = 'blue', style='curl'} }
+'diagnostic.warning'= { underline = { color = 'yellow', style='curl'} }
+'diagnostic.error'= { underline = { color = 'red', style='curl'} }
+
+# UI ==============================
+# For styling helix itself.
+
+'ui.background' = { fg = 'text', bg = 'base' }
+
+'ui.linenr' = { fg = 'surface1' }
+'ui.linenr.selected' = { fg = 'lavender' }
+
+'ui.statusline' = { fg = 'subtext1', bg = 'mantle' }
+'ui.statusline.inactive' = { fg = 'surface2', bg = 'mantle' }
+'ui.statusline.normal' = { fg = 'base', bg = 'lavender', modifiers = ['bold'] }
+'ui.statusline.insert' = { fg = 'base', bg = 'green', modifiers = ['bold']  }
+'ui.statusline.select' = { fg = 'base', bg = 'flamingo', modifiers = ['bold']  }
+
+'ui.popup' = { fg = 'text', bg = 'surface0' }
+'ui.window' = { fg = 'crust' }
+'ui.help' = { fg = 'overlay2', bg = 'surface0' }
+
+'ui.bufferline' = { fg = 'subtext0', bg = 'mantle' }
+'ui.bufferline.active' = { fg = 'mauve', bg = 'base', underline = { color = 'mauve', style = 'line' } }
+'ui.bufferline.background' = { bg = 'crust' }
+
+'ui.text' = 'text'
+'ui.text.focus' = { fg = 'text', bg = 'surface0', modifiers = ['bold'] }
+'ui.text.inactive' = { fg = 'overlay1' }
+
+'ui.virtual' = 'overlay0'
+'ui.virtual.ruler' = { bg = 'surface0' }
+'ui.virtual.indent-guide' = 'surface0'
+'ui.virtual.inlay-hint' = { fg = 'surface1', bg = 'mantle' }
+
+'ui.selection' = { bg = 'surface1' }
+
+'ui.cursor' = { fg = 'base', bg = 'secondary_cursor' }
+'ui.cursor.primary' = { fg = 'base', bg = 'rosewater' }
+'ui.cursor.match' = { fg = 'peach', modifiers = ['bold'] }
+
+'ui.cursor.primary.normal' = { fg = 'base', bg = 'lavender' }
+'ui.cursor.primary.insert' = { fg = 'base', bg = 'green' }
+'ui.cursor.primary.select' = { fg = 'base', bg = 'flamingo' }
+
+'ui.cursor.normal' = { fg = 'base', bg = 'secondary_cursor_normal' }
+'ui.cursor.insert' = { fg = 'base', bg = 'secondary_cursor_insert' }
+'ui.cursor.select' = { fg = 'base', bg = 'secondary_cursor' }
+
+'ui.cursorline.primary' = { bg = 'cursorline' }
+
+'ui.highlight' = { bg = 'surface1', modifiers = ['bold'] }
+
+'ui.menu' = { fg = 'overlay2', bg = 'surface0' }
+'ui.menu.selected' = { fg = 'text', bg = 'surface1', modifiers = ['bold'] }
+
+# SYNTAX HIGHLIGHTING ==============================
+# All the keys here are Treesitter scopes.
+
+'special' = 'yellow' # Special symbols e.g `?` in Rust, `...` in Hare.
+
+'type' = 'blue' # Variable type, like integer or string, including program defined classes, structs etc..
+'type.builtin' = 'blue' # Primitive types of the language (string, int, float).
+
+'constructor' = 'green' # Constructor method for a class or struct.
+'constant' = 'magenta' # Constant value
+
+'string' = 'green' # String literal.
+'string.regexp' = 'orange' # Regular expression literal.
+'string.special' = 'yellow' # Strings containing a path, URL, etc.
+
+'comment' = { fg = 'overlay1', modifiers = ['italic'] }
+
+'variable' = 'text' # Variable names.
+'variable.builtin' = 'magenta' # Language reserved variables: `this`, `self`, `super`, etc.
+
+'label' = 'orange' # Loop labels, among other things.
+
+'punctuation' = 'overlay2' # Any punctuation symbol.
+'punctuation.delimiter' = 'overlay2' # Commas, colons or other delimiter depending on the language.
+'punctuation.bracket' = 'overlay1' # Parentheses, angle brackets, etc.
+
+'keyword' = 'orange' # Language reserved keywords.
+
+'operator' = 'orange' # Logical, mathematical, and other operators.
+
+'function' = 'yellow'
+'function.method' = 'yellow' # Class / Struct methods.
+'function.macro' = 'mauve'
+
+'tag' = 'blue' # As in <body> for html, css tags.
+'tag.error' = 'red' # Erroneous closing html tags.
+
+'namespace' = 'blue' # Namespace or module identifier.
+
+
+# Markup ==============================
+# Colors for markup languages, like Markdown or XML.
+
+'markup.heading' = 'orange'
+'markup.list' = 'yellow'
+'markup.bold' = { fg = 'orange', modifiers = ['bold'] }
+'markup.italic' = { fg = 'orange', modifiers = ['italic'] }
+'markup.strikethrough' = { modifiers = ['crossed_out'] }
+'markup.raw.block' = 'orange'
+'markup.link.url' = 'blue'
+'markup.link.text' = 'yellow'
+'markup.link.label' = 'green'
+'markup.quote' = 'yellow'
+
+
+# Diff ==============================
+# Version control changes.
+
+'diff.plus' =  'green'
+'diff.minus' = 'red'
+'diff.delta' = 'yellow'
+
+
+[palette] # Define your custom colors here.
+
+black = "#131721"
+blue = "#59c2ff"
+dark_gray = "#2d3640"
+cyan = "#73b8ff"
+gray = "#5c6773"
+green = "#aad94c"
+magenta = "#d2a6ff"
+orange = "#ff8f40"
+red = "#f07178"
+yellow = "#e6b450"
+
+# catppuccin palette colors
+rosewater = "#f5e0dc"
+flamingo = "#f2cdcd"
+pink = "#f5c2e7"
+mauve = "#cba6f7"
+maroon = "#eba0ac"
+peach = "#fab387"
+teal = "#94e2d5"
+sky = "#89dceb"
+sapphire = "#74c7ec"
+lavender = "#b4befe"
+
+text = "#cdd6f4"
+subtext1 = "#bac2de"
+subtext0 = "#a6adc8"
+overlay2 = "#9399b2"
+overlay1 = "#7f849c"
+overlay0 = "#6c7086"
+surface2 = "#585b70"
+surface1 = "#45475a"
+surface0 = "#313244"
+
+base = "#1e1e2e"
+mantle = "#181825"
+crust = "#11111b"
+
+# derived colors by blending existing palette colors
+cursorline = "#2a2b3c"
+secondary_cursor = "#b5a6a8"
+secondary_cursor_normal = "#878ec0"
+secondary_cursor_insert = "#7da87e"

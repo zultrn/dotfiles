@@ -1,5 +1,7 @@
 #! /bin/zsh
 
+mouse_warping container
+
 ### Key bindings
 #
 # Basics:
@@ -42,6 +44,11 @@
     bindsym $mod+Shift+$down move down
     bindsym $mod+Shift+$up move up
     bindsym $mod+Shift+$right move right
+
+    bindsym $mod+Alt+$right resize grow width 10px
+    bindsym $mod+Alt+$left resize shrink width 10px
+    bindsym $mod+Alt+$up resize grow height 10px
+    bindsym $mod+Alt+$down resize shrink height 10px
 #
 # Workspaces:
 #
