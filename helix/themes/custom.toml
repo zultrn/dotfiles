@@ -101,7 +101,7 @@
 
 'function' = 'yellow'
 'function.method' = 'yellow' # Class / Struct methods.
-'function.macro' = 'mauve'
+'function.macro' = 'peach'
 
 'tag' = 'blue' # As in <body> for html, css tags.
 'tag.error' = 'red' # Erroneous closing html tags.
