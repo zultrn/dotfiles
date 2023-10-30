@@ -1,25 +1,13 @@
-#! /bin/zsh
 
 output * bg $wallpaper fill
 
-# based on Base16 Seti UI
-# Author: Appelgriebsch
-
-
-# some global theme specific variables
-
-set $cl_high #b4befe
-set $cl_back #1e1e2e
-set $cl_fore #cdd6f4
-set $cl_urge #f38ba8
-
 # Colors                border   bg       text     indi     childborder
 client.focused          $cl_high $cl_high $cl_fore $cl_high $cl_high
-client.focused_inactive $cl_back $cl_back $cl_fore $cl_back $cl_back
-client.unfocused        $cl_back $cl_back $cl_fore $cl_back $cl_back
+client.focused_inactive $cl_back $cl_back $cl_fore $cl_void $cl_void
+client.unfocused        $cl_back $cl_back $cl_fore $cl_void $cl_void
 client.urgent           $cl_urge $cl_urge $cl_fore $cl_urge $cl_urge
 
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 2
 
 gaps outer 5
 gaps inner 5

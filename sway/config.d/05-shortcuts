@@ -1,7 +1,3 @@
-#! /bin/zsh
-
-mouse_warping container
-
 ### Key bindings
 #
 # Basics:
