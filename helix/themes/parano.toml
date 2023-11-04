@@ -31,7 +31,8 @@
 'ui.statusline.insert' = { fg = 'base', bg = 'green', modifiers = ['bold']  }
 'ui.statusline.select' = { fg = 'base', bg = 'flamingo', modifiers = ['bold']  }
 
-'ui.popup' = { fg = 'text', bg = 'surface0' }
+'ui.popup' = { fg = 'text', bg = 'mantle' }
+
 'ui.window' = { fg = 'crust' }
 'ui.help' = { fg = 'overlay2', bg = 'surface0' }
 
@@ -66,8 +67,8 @@
 
 'ui.highlight' = { bg = 'surface1', modifiers = ['bold'] }
 
-'ui.menu' = { fg = 'overlay2', bg = 'surface0' }
-'ui.menu.selected' = { fg = 'text', bg = 'surface1', modifiers = ['bold'] }
+'ui.menu' = { fg = 'overlay2', bg = 'mantle' }
+'ui.menu.selected' = { fg = 'blue', modifiers = ['bold'] }
 
 # SYNTAX HIGHLIGHTING ==============================
 # All the keys here are Treesitter scopes.
