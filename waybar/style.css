@@ -1,0 +1,51 @@
+window#waybar {
+  background: #11111b;
+  color: #cdd6f4;
+  font-family: JetBrainsMono Nerd Font;
+  font-size: 10px;
+  font-weight: 900;
+  margin: 0px;
+  padding: 0px;
+}
+
+#tags button.occupied {
+  color: #6c7086;
+}
+
+#tags button.focused {
+  color: #b4befe;
+}
+
+
+#network {
+  margin: 0 10px;
+}
+
+#cpu {
+  color: #7f849c;
+  margin: 0 10px;
+}
+
+#memory {
+  color: #7f849c;
+  margin: 0 10px;
+}
+
+#pulseaudio {
+  color: #7f849c;
+  margin: 0 10px;
+}
+
+#backlight {
+  color: #7f849c;
+  margin: 0 10px;
+}
+
+#battery {
+  color: #7f849c;
+  margin: 0 10px;
+}
+
+#clock {
+  margin: 0 10px;
+}
